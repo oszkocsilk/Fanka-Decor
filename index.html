@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <title>Fanka Decor</title>
+</head>
+<body ng-app="myApp" >
+    <header class="nav">
+        <a href="#info" class="info">Tájékoztató</a>
+        <a href="#" class="gallery">Galéria</a>
+        <a href="#prices" class="prices">Árak</a>
+        <a href="#" class="transfer">Szállításról</a>
+        <a href="#" class="me">Rólam</a>
+        <a href="#" class="officials">Hivatalos</a>
+        <a href="#" class="gifts">Ajándékcsomagok</a>
+        <a href="#" class="fromYou">Tőletek</a>
+    </header>
+
+
+    <div class="page1">
+        <div class="container">
+            <div class="pic">
+                <img src="img/placeholder/placeholder.png" alt="Fanka Dekor">
+            </div>
+            <div class="text">
+                <h1>Fanka Decor</h1>
+                <img class= "logo" src="img/linktree/logo.png" alt="Fanka Dekor">
+                <h3>Üdvözöllek a Fanka decor oldalán!</h3>
+                <footer>
+                    <a href="https://www.facebook.com/tirpak.fanni"><img src="img/linktree/facebook.png" class="footer-pic"></a>
+                    <a href="https://www.instagram.com/fanka-dekor/"><img src="img/linktree/instagram.png"  class="footer-pic"></a>
+                    <a href="#"><img src="img/linktree/meska.png"  class="footer-pic"></a>
+                
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page2" id="info">
+        <div class="container">
+            <div class="pic">
+                <img src="img/products/test.jpg" alt="Fanka Dekor">
+            </div>
+            <div class="text">
+                <h1>Tájékoztató (viasz, kanóc, szín, illat, méret)</h1>
+                <p>Viasz
+                    Gyertyáim készítéséhez szójaviaszt használok.
+                    
+                    </p>
+                    <p>
+                        A szójagyertya 100 %-ban növényi alapú viaszból  (szójababból) készül, mely nem juttat toxinokat a levegőbe (vegán).  A hagyományos gyertyák paraffinból vagy paraffin félékből készülnek melyek kőolajszármazékok, égetésük igen káros az egészségünkre, ugyanazok a toxinok (pl.:benzol, toluol és formaldehid) kerülnek a levegőbe, mint a dízel üzemanyagok égetése során. 
+                    </p>
+                    <p>
+                        A szójaviasz gyertyák tisztán égnek, nem termelnek fekete kormot, ellentétben a kőolaj alapú gyertyákkal, melyek égetése során fekete korom keletkezik, mely ellepheti a  függönyöket, szőnyeget, falakat.
+                    </p>
+                    <p>
+                        A szójaviasz teljesen természetes, megújuló és vegán, szójababból származtatott növényi olaj, mely szobahőmérsékleten szilárd anyaggá alakul. - megújuló és környezetbarát. A szójaviasz a legjobb alternatíva a vegánoknak, és mindannyiunknak, akik környezettudatos és egészséges otthont szeretnének kialakítani.
+                    </p>
+                    <p>
+                        A szójaviasz sokkal kisebb eséllyel égetheti meg a bőrt, mivel alacsonyabb az olvadáspontja, mint a paraffinnak. A szójaviasz biztonságosabb, ha gyermeked és/vagy háziállatod van.
+                    </p>
+                    <p>
+                        A szójaviasz gyertya gazdaságosabb hiszen közel kétszer tovább ég, mint a hagyományos gyertyák. 
+                    </p>
+                    <p>
+                        A szójaviasz gyertya illata természetesebb és kellemesebb, mivel a viasz maga tisztább (1000x), mint a paraffin.  
+                    </p>
+                
+            
+                <div class="column-text" ng-controller="MainController">
+                    <div>
+                        <p class="sizes">Méretek:</p>
+                        <div class="text-size" ng-repeat="size in sizes">
+                                <size-info info="size"></size-info>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p class="colors">Színek:</p>
+                            <div class="text-size" ng-repeat="color in colors">
+                                    <color-info info="color"></color-info>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page4" id="prices" >
+        <div class="main" ng-controller="MainController">
+            <div class="container">
+               <div ng-repeat="prod in products"> 
+                 <product-info info="prod"></product-info>
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button id="topBtn" onclick="topFunction()">&#8679;</button>
+    
+    <script src="js/controllers/MainControllers.js"></script>
+    <script src="js/controllers/topBtn.js"></script>
+    <script src="js/directives/productsInfo.js"></script>
+    <script src="js/directives/sizeInfo.js"></script>
+    <script src="js/directives/colorInfo.js"></script>
+
+</body>
+</html>
