@@ -38,9 +38,7 @@ prod.controller('MainController', ['$scope', function($scope) {
     {color: "citromsárga" },
     {color: "citromsárga (neon)" },
     {color: "narancssárga" },
-    {color: "csillogós zöld" },
-    {color: "csillogós arany" },
-    {color: "csillogós barack" }
+    {color: "csillogós zöld, arany, barack" }
     ];
   
   

@@ -11,21 +11,21 @@
 </head>
 <body ng-app="myApp" >
     <header class="nav">
-        <a href="#info" class="info">Tájékoztató</a>
-        <a href="#" class="gallery">Galéria</a>
-        <a href="#prices" class="prices">Árak</a>
-        <a href="#" class="transfer">Szállításról</a>
-        <a href="#" class="me">Rólam</a>
-        <a href="#" class="officials">Hivatalos</a>
-        <a href="#" class="gifts">Ajándékcsomagok</a>
-        <a href="#" class="fromYou">Tőletek</a>
+        <a href="#info">Tájékoztató</a>
+        <a href="#">Galéria</a>
+        <a href="#prices">Árak</a>
+        <a href="#transport">Szállításról</a>
+        <a href="#me">Rólam</a>
+        <a href="#officials">Hivatalos</a>
+        <a href="#gifts">Ajándékcsomagok</a>
+        <a href="#fromYou">Tőletek</a>
     </header>
 
 
     <div class="page1">
         <div class="container">
             <div class="pic">
-                <img src="img/placeholder/placeholder.png" alt="Fanka Dekor">
+                <img src="img/products/test.jpg" alt="Fanka Dekor">
             </div>
             <div class="text">
                 <h1>Fanka Decor</h1>
@@ -47,7 +47,7 @@
                 <img src="img/products/test.jpg" alt="Fanka Dekor">
             </div>
             <div class="text">
-                <h1>Tájékoztató (viasz, kanóc, szín, illat, méret)</h1>
+                <h2>Tájékoztató (viasz, méret, szín, illat, kanóc)</h2>
                 <p>Viasz
                     Gyertyáim készítéséhez szójaviaszt használok.
                     
@@ -88,6 +88,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="column-text" ng-controller="MainController">
+                    <div>
+                        <p class="scent">Illat:</p>
+                        <p>
+                            Megfelelő választás a levendula, ha kedveled nyugtató illatát.
+                            Ha frissítő illatra vágysz az erdei gyümölcs pont tökéletes választás.
+                            A narancs illat nekem inkább a karácsonyra emlékeztet, de kinek mi.
+                            Illetve kérhető még kókusz-vanília változatban is a nyári esti napokra.
+                            A téli illat szerelmeseinek kettő féle változat áll rendelkezésre: karácsonyi varázs és karácsonyi fűszerkeverék (fahéj, szegfű, fűszerezett forralt bor).
+                        </p>
+                    </div>
+                    <div>
+                        <div>
+                            <p class="match">Kanóc:</p>
+                            <p>
+                                A kanóc hármas fonatból áll, fonatonként 15 pamutszállal. 100% tisztaságú pamut kanóc.
+                            </p>
+                            <p>
+                                Talpas kanócot használok a Shell nevű gyertya készítéséhez.A kanóc erős, merev, viaszolt felülete biztosítja azt, hogy öntés közben is stabilan tartsa egyenes formáját. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -102,6 +125,133 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <div class="page5" id="transport" >
+        <div class="container">
+            <div class="infos">
+                <div class="transfer">
+                    <div class="title" >
+                        &#8226; Szállítási módok:
+                    </div>
+                    <p>
+                        - Magyar Posta házhozszállítás
+                        Díja: 1855Ft
+                    </p>
+                    <p>
+                        - Foxpost automatába
+                        Díja: 1099Ft
+                    </p>
+                    <p>
+                        - Foxpost házhozszállítás
+                        Díja: 1699Ft
+                    </p>
+                    <p>
+                        - Személyes átvétel: Tiszaújvárosban és Debrecenben lehetőség van személyes átvételre is előre egyeztetett időpontban.
+                    </p>
+    
+                </div>
+                <div class="payment">
+                    <div class="title" >
+                        &#8226; Fizetési módok:
+                    </div>
+                    <p>
+                        - Kizárólag előre utalás után tudom feladni a csomagot.
+                    </p>
+                    <p>
+                        - Utánvétre sajnos nincs lehetőség.
+                    </p>
+                </div>
+                <div class="package">
+                    <div class="title">
+                        &#8226; Csomagolás:
+                    </div>
+                </div>
+            </div>
+            <div class="pic"><img src="img/products/test.jpg" alt="Szállítási infók"></div>
+    
+        </div>
+    </div>
+
+
+
+    <div class="page6" id="me" >
+        <div class="container">
+            <div class="pic">
+                <img src="img/products/test.jpg">
+                <div class="pic-text">
+                    <p>
+                        Kedves Látogató!
+                    </p>
+                    <p>
+                        A nevem Fanni, a fankadecor alapítója. 20 éves vagyok és jelenleg a tanulmányaim mellett foglalkozom a gyertya készítéssel. 2021. májusában kezdtem el a kisvállalkozásomat. Örömmel tölt el, hogy azzal foglalkozhatok amit igazán szeretek. 
+                    </p>
+                    <p>
+                        Már kiskoromban is rengeteget kreatívkodtam, hisz imádtam üvegfestékezni, gyöngyöt fűzni, fülbevalót és nyakláncot csinálni, harisnyából és drótból különféle virágokat készíteni. Rengeteg kreatív könyvem volt. Kertes házban élünk a szüleimmel, a körülöttünk lakók zöme idősebb korosztály. Egy nyári nap bekopogtam a szomszédokhoz és a kezükbe nyomtam egy meghívót a bolhapiacomra rajta dátummal. Ezt követően az utcánkban leültem egy hatalmas árnyékot adó fa alá a boltos kasszámmal illetve a mindenféle eladó dísztárgyaimmal és vártam a vásárlókat. Aranyosak voltak, eljött mindenki és vásároltak is akiket hívtam. A mai napig jó kapcsolatot ápolunk velük. Tehát innen a vállalkozó szellem. Talán a véremben is lehet, hisz édesapám is vállalkozó.
+                    </p>
+                    <div class="readMore">
+                        <a href="#" >Olvass tovább...</a>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="links">
+                <a href="https://www.facebook.com/tirpak.fanni"><img src="img/linktree/facebook.png" class="footer-pic"></a>
+                <a href="https://www.instagram.com/fanka-dekor/"><img src="img/linktree/instagram.png"  class="footer-pic"></a>
+                <a href="#"><img src="img/linktree/meska.png"  class="footer-pic"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="page7" id="officials" >
+        <div class="container">
+               
+        </div>
+    </div>
+    <div class="page8" id="gifts" >
+        <div class="container">
+               
+        </div>
+    </div>
+    <div class="page9" id="fromYou" >
+        <div class="container">
+
+        </div>
+    </div>        
+
 
 
     <button id="topBtn" onclick="topFunction()">&#8679;</button>
