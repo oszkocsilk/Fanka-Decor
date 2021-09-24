@@ -1,7 +1,12 @@
-<div class="col">
-    <div class="prod-pic"><img ng-src="{{ info.picture }}"></div>
+<img id="Big{{  info.number  }}" ng-src="{{ info.picture  }}" alt="{{info.number}}" class="modal" style="width: 35rem;;">
+
+<div class="col" id="prod-gallery" >
+    <span class="close">&times;</span>
+    <div class="prod-pic"><img id="{{  info.number  }}" class="hover-shadow" ng-click="info.action(info.number)" ng-src="{{ info.picture }}"></div>
     <div class="prod-col">
         <div class="prod-name">{{ info.name }}</div>
         <div class="prod-price">{{ info.price }}</div>
+
+        <button ng-click="info.action(info.number)" >több kép</button>
     </div>
 </div>
